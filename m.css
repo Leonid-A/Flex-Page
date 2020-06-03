@@ -1,0 +1,15 @@
+.container-top{
+    text-align: left;
+    justify-content:space-between;
+    max-width:100%;
+    margin:0 5px;
+}
+
+.box-container, .rules-container {
+    justify-content:space-between;
+}
+
+.box-item, .rules-item {
+    max-width: 45%;
+    margin: 5px;
+}

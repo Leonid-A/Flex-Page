@@ -1,0 +1,189 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:var(--main-back);
+    font-size: 12px;
+    font-family: sans-serif;
+    margin:0;
+}
+
+.container{
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container-top{
+    padding: 0 2%;
+    display:flex;
+    justify-content:center;
+    flex-wrap: wrap-reverse;
+    max-width:400px;
+    margin:0 auto
+}
+
+.header-container{
+    flex: 0 1 auto;
+}
+
+.head, .rules-link{
+    color: var(--head);
+}
+
+.rules-link:hover{
+    color:orange
+}
+
+.info{
+    color:white;
+}
+
+.button-container {
+    padding-top:20px;
+    flex: 0 0 130px;
+    display:flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    margin-bottom:10px;
+}
+
+.button{
+    background-color: var(--light-button);
+    border-radius:3px;
+    padding:5px;
+    cursor: pointer;
+    transition: .3s linear background-color
+}
+
+.button:hover{
+    background-color:yellow;
+    transition: .3s linear background-color
+}
+
+.box-container, .rules-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 1% 2%;
+}
+
+.box-item{
+    padding: 10px 10px;
+    background-color: var(--box-back);
+    min-width:310px;
+    color:white;
+    margin-bottom: 10px;
+    width: 400px;
+    position:relative;
+    overflow:hidden;
+}
+
+.live{
+    position:absolute;
+    width:80px;
+    color:white;
+    background-color: lightgreen;
+    top:3px;
+    left:-30px;
+    transform: rotate(-45deg);
+    font-size: 10px;
+    padding:2px;
+}
+
+.box-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.logo-cont{
+    margin:0;
+}
+
+.btc-logo{
+    background-color: orange;
+    border-radius: 50%;
+    padding: 5px 8px;
+    margin-right: 5px;
+    display:inline-block;
+    transform: rotate(20deg);
+}
+
+.vote-button{
+    border:1px solid var(--head);
+    color:var(--head);
+    padding:3px 30px;
+    border-radius:5px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: .3s linear background-color, .3s linear color, .3s linear border-color;
+}
+
+.vote-button:hover{
+    background-color: orange;
+    transition: .3s linear background-color, .3s linear color, .3s linear border-color;
+    color:white;
+    border-color:white;
+}
+
+.price-increases{
+    color:green;
+}
+
+.price-decreases{
+    color:red;
+}
+
+.rules-item{
+    background-color: black;
+    color:white;
+    padding: 10px;
+    min-width:310px;
+    margin-bottom:10px;
+    width:400px;
+    text-align:left;
+}
+
+.hexagon{
+    position: relative;
+    width: 15px; 
+    height: 8.6px;
+    background-color: black;
+    margin: 0 1.5px;
+}
+  
+.hexagon:before, .hexagon:after{
+    content: "";
+    left: 0;
+    position: absolute;
+    border-left: 7.5px solid transparent;
+    border-right: 7.5px solid transparent;
+}
+
+.hexagon:before{
+    bottom: 100%;
+    border-bottom: 4.3px solid black;
+}
+
+.hexagon:after{
+    top: 100%;
+    border-top: 4.3px solid black;
+}
+
+.hex-cont{
+    display:flex;
+}
+
+.active{
+    background-color: var(--light-button);
+}
+
+.active:after{
+    border-top-color: var(--light-button);
+}
+
+.active:before{
+    border-bottom-color:var(--light-button);
+}

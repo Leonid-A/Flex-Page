@@ -1,0 +1,10 @@
+@import "s.css" only screen;
+@import "m.css" only screen and (min-width: 670px);
+@import "l.css" only screen and (min-width: 1000px);
+
+:root{
+    --main-back:#24292e;
+    --head: #5f84b8;
+    --light-button: #7de3d0;
+    --box-back: #24394f;
+}
